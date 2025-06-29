@@ -89,7 +89,7 @@ food101_classifier/
 ### For inference
 ## TODO
 
- - [ ] set up TensorRT Docker development container
+ - [x] set up TensorRT Docker development container
  - [ ] dataset EDA
  - [ ] select model architecture
  - [ ] select evaluation metrics
