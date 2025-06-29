@@ -63,6 +63,7 @@ food101_classifier/
 1. Download dataset zip archive
     - Option 1: Download from [Kaggle website](https://www.kaggle.com/datasets/dansbecker/food-101?resource=download)
     - Option 2: Or via terminal (change download path)
+
    ```
    curl -L -o /path/to/download/folder/food-101.zip\
      https://www.kaggle.com/api/v1/datasets/download/dansbecker/food-101
@@ -78,6 +79,7 @@ food101_classifier/
 ## TODO
 
  - [x] start writing todo
+ - [ ] set up TensorRT Docker development container
  - [ ] dataset EDA
  - [ ] select model architecture
  - [ ] select evaluation metrics
@@ -96,6 +98,9 @@ food101_classifier/
    - [ ] experiments handling
  - [ ] train model
  - [ ] review metrics 
- - [ ] convert model to ONNX+TensorRT
- - [ ] make model API
- - [ ] deploy on Docker
+ - [ ] inference model
+   - [ ] convert model to ONNX+TensorRT
+   - [ ] make FastAPI api
+   - [ ] deploy on Docker
+     - [ ] ONNX option
+     - [ ] TensorRT option
