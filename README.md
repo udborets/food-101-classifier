@@ -9,7 +9,7 @@ Computer vision model trained on food-101 dataset
   - [Technologies](#technologies)
   - [Local installation](#local-installation)
     - [For developement](#for-developement)
-    - [Dataset installation](#dataset-installation)
+      - [Dataset installation](#dataset-installation)
     - [For inference](#for-inference)
   - [Dataset](#dataset)
     - [Review](#review)
@@ -31,7 +31,7 @@ Computer vision model trained on food-101 dataset
 
 ### For developement
 
-### Dataset installation
+#### Dataset installation
 
 1. Download dataset zip archive
     - Download from [Kaggle website](https://www.kaggle.com/datasets/dansbecker/food-101?resource=download)
