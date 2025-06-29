@@ -9,10 +9,10 @@ Computer vision model trained on food-101 dataset
   - [Technologies](#technologies)
   - [Local installation](#local-installation)
     - [For developement](#for-developement)
+    - [Dataset installation](#dataset-installation)
     - [For inference](#for-inference)
   - [Dataset](#dataset)
     - [Review](#review)
-    - [Installation](#installation)
   - [](#)
   - [TODO](#todo)
 
@@ -29,25 +29,9 @@ Computer vision model trained on food-101 dataset
 
 ## Local installation
 
-
-
 ### For developement
 
-
-
-### For inference
-
-
-
-## Dataset
-
-### Review
-
-Food-101 paper: https://paperswithcode.com/dataset/food-101
-
-Food-101 on Kaggle: https://www.kaggle.com/datasets/dansbecker/food-101
-
-### Installation
+### Dataset installation
 
 1. Download dataset zip archive
     - Download from [Kaggle website](https://www.kaggle.com/datasets/dansbecker/food-101?resource=download)
@@ -62,6 +46,16 @@ Food-101 on Kaggle: https://www.kaggle.com/datasets/dansbecker/food-101
     mkdir -p /path/to/project/data/food-101
     unzip /path/to/download/folder/food-101.zip -d /path/to/project/data/food-101
     ```
+
+### For inference
+
+## Dataset
+
+### Review
+
+Food-101 paper: https://paperswithcode.com/dataset/food-101
+
+Food-101 on Kaggle: https://www.kaggle.com/datasets/dansbecker/food-101
 
 ## 
 ## TODO
