@@ -80,19 +80,19 @@ food101_classifier/
  - [x] start writing todo
  - [ ] dataset EDA
  - [ ] select model architecture
- - [ ] set up data processing pipeline
-   - [ ] select image size and augmentation
  - [ ] select evaluation metrics
  - [ ] set up training pipeline
    - [ ] Hydra config
    - [ ] lightning dataset
+     - [ ] data loading
+     - [ ] preprocessing
    - [ ] lightning model
    - [ ] training loop
    - [ ] evaluation loop
    - [ ] tensorboard logging
-    - [ ] image grid
-    - [ ] loss
-    - [ ] accuracy
+     - [ ] image grid
+     - [ ] loss
+     - [ ] accuracy
    - [ ] experiments handling
  - [ ] train model
  - [ ] review metrics 
