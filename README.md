@@ -9,6 +9,8 @@ Computer vision model trained on food-101 dataset
   - [Dataset](#dataset)
     - [Review](#review)
   - [Technologies](#technologies)
+    - [Development](#development)
+    - [Inference](#inference)
   - [Project structure](#project-structure)
   - [Local installation](#local-installation)
     - [For developement](#for-developement)
@@ -26,13 +28,18 @@ Food-101 on Kaggle: https://www.kaggle.com/datasets/dansbecker/food-101
 
 ## Technologies
 
+### Development
+
+ - [uv](https://docs.astral.sh/uv/)
  - [PyTorch](https://pytorch.org/)
  - [PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/)
  - [Tensorboard](https://www.tensorflow.org/tensorboard)
- - [ONNX](https://onnx.ai/)
+ - 
+### Inference 
+
  - [FastAPI](https://fastapi.tiangolo.com/)
  - [TensorRT](https://developer.nvidia.com/tensorrt)
- - [uv](https://docs.astral.sh/uv/)
+ - [ONNX](https://onnx.ai/)
  - [Docker](https://www.docker.com/)
 
 ## Project structure
