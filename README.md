@@ -6,15 +6,23 @@ Computer vision model trained on food-101 dataset
 
 - [Food-101 classifier](#food-101-classifier)
   - [Navigation](#navigation)
+  - [Dataset](#dataset)
+    - [Review](#review)
   - [Technologies](#technologies)
+  - [Project structure](#project-structure)
   - [Local installation](#local-installation)
     - [For developement](#for-developement)
       - [Dataset installation](#dataset-installation)
     - [For inference](#for-inference)
-  - [Dataset](#dataset)
-    - [Review](#review)
-  - [](#)
   - [TODO](#todo)
+
+## Dataset
+
+### Review
+
+Food-101 paper: https://paperswithcode.com/dataset/food-101
+
+Food-101 on Kaggle: https://www.kaggle.com/datasets/dansbecker/food-101
 
 ## Technologies
 
@@ -27,6 +35,25 @@ Computer vision model trained on food-101 dataset
  - [uv](https://docs.astral.sh/uv/)
  - [Docker](https://www.docker.com/)
 
+## Project structure
+
+```
+food101_classifier/
+├── src/
+│ ├── data/ # Data loaders and transforms
+│ ├── models/ # Model architectures
+│ ├── training/ # Training loop, LightningModule
+│ ├── inference/ # ONNX/TensorRT scripts
+│ ├── api/ # FastAPI app
+│ └── utils/ # Misc helpers
+├── config/ # Hydra configs
+├── notebooks/ # EDA and experiments
+├── tests/ # Unit tests
+├── Dockerfile
+├── requirements.txt / pyproject.toml
+└── README.md
+```
+
 ## Local installation
 
 ### For developement
@@ -34,8 +61,8 @@ Computer vision model trained on food-101 dataset
 #### Dataset installation
 
 1. Download dataset zip archive
-    - Download from [Kaggle website](https://www.kaggle.com/datasets/dansbecker/food-101?resource=download)
-    - Or via terminal (change download path)
+    - Option 1: Download from [Kaggle website](https://www.kaggle.com/datasets/dansbecker/food-101?resource=download)
+    - Option 2: Or via terminal (change download path)
    ```
    curl -L -o /path/to/download/folder/food-101.zip\
      https://www.kaggle.com/api/v1/datasets/download/dansbecker/food-101
@@ -48,24 +75,27 @@ Computer vision model trained on food-101 dataset
     ```
 
 ### For inference
-
-## Dataset
-
-### Review
-
-Food-101 paper: https://paperswithcode.com/dataset/food-101
-
-Food-101 on Kaggle: https://www.kaggle.com/datasets/dansbecker/food-101
-
-## 
 ## TODO
 
- - [x] start writing todo 
+ - [x] start writing todo
  - [ ] dataset EDA
  - [ ] select model architecture
- - [ ] data processing pipeline
-   - [ ] image size
-   - [ ] augmentation
+ - [ ] set up data processing pipeline
+   - [ ] select image size and augmentation
+ - [ ] select evaluation metrics
+ - [ ] set up training pipeline
+   - [ ] Hydra config
+   - [ ] lightning dataset
+   - [ ] lightning model
+   - [ ] training loop
+   - [ ] evaluation loop
+   - [ ] tensorboard logging
+    - [ ] image grid
+    - [ ] loss
+    - [ ] accuracy
+   - [ ] experiments handling
+ - [ ] train model
+ - [ ] review metrics 
  - [ ] convert model to ONNX+TensorRT
  - [ ] make model API
  - [ ] deploy on Docker
