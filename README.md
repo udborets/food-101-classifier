@@ -7,6 +7,8 @@ Computer vision model trained on food-101 dataset
 - [Food-101 classifier](#food-101-classifier)
   - [Navigation](#navigation)
   - [Dataset](#dataset)
+  - [Model](#model)
+    - [Architecture](#architecture)
   - [Technologies](#technologies)
     - [Development](#development)
     - [Inference](#inference)
@@ -23,7 +25,9 @@ Food-101 paper: https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/
 
 Food-101 on Kaggle: https://www.kaggle.com/datasets/dansbecker/food-101
 
-> We introduce a challenging data set of 101 food categories, with 101'000 images. For each class, 250 manually reviewed test images are provided as well as 750 training images. On purpose, the training images were not cleaned, and thus still contain some amount of noise. This comes mostly in the form of intense colors and sometimes wrong labels. All images were rescaled to have a maximum side length of 512 pixels.
+## Model
+
+### Architecture
 
 ## Technologies
 
@@ -85,7 +89,6 @@ food101_classifier/
 ### For inference
 ## TODO
 
- - [x] start writing todo
  - [ ] set up TensorRT Docker development container
  - [ ] dataset EDA
  - [ ] select model architecture
