@@ -7,7 +7,6 @@ Computer vision model trained on food-101 dataset
 - [Food-101 classifier](#food-101-classifier)
   - [Navigation](#navigation)
   - [Dataset](#dataset)
-    - [Review](#review)
   - [Technologies](#technologies)
     - [Development](#development)
     - [Inference](#inference)
@@ -20,11 +19,11 @@ Computer vision model trained on food-101 dataset
 
 ## Dataset
 
-### Review
-
-Food-101 paper: https://paperswithcode.com/dataset/food-101
+Food-101 paper: https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/
 
 Food-101 on Kaggle: https://www.kaggle.com/datasets/dansbecker/food-101
+
+> We introduce a challenging data set of 101 food categories, with 101'000 images. For each class, 250 manually reviewed test images are provided as well as 750 training images. On purpose, the training images were not cleaned, and thus still contain some amount of noise. This comes mostly in the form of intense colors and sometimes wrong labels. All images were rescaled to have a maximum side length of 512 pixels.
 
 ## Technologies
 
@@ -69,13 +68,13 @@ food101_classifier/
 #### Dataset installation
 
 1. Download dataset zip archive
-    - Option 1: Download from [Kaggle website](https://www.kaggle.com/datasets/dansbecker/food-101?resource=download)
-    - Option 2: Or via terminal (change download path)
+ - Option 1: Download from [Kaggle website](https://www.kaggle.com/datasets/dansbecker/food-101?resource=download)
+ - Option 2: Or via terminal (change download path)
 
-   ```
-   curl -L -o /path/to/download/folder/food-101.zip\
-     https://www.kaggle.com/api/v1/datasets/download/dansbecker/food-101
-   ```
+    ```
+    curl -L -o /path/to/download/folder/food-101.zip\
+      https://www.kaggle.com/api/v1/datasets/download/dansbecker/food-101
+    ```
 
 2. Unzip
     ```
@@ -92,7 +91,7 @@ food101_classifier/
  - [ ] select model architecture
  - [ ] select evaluation metrics
  - [ ] set up training pipeline
-   - [ ] Hydra config
+   - [ ] Hydra config handling
    - [ ] lightning dataset
      - [ ] data loading
      - [ ] preprocessing
@@ -104,8 +103,11 @@ food101_classifier/
      - [ ] loss
      - [ ] accuracy
    - [ ] experiments handling
- - [ ] train model
- - [ ] review metrics 
+ - [ ] experiment
+   - [ ] try different architectures
+   - [ ] try different hyperparameters
+   - [ ] compare results
+   - [ ] save best model
  - [ ] inference model
    - [ ] convert model to ONNX+TensorRT
    - [ ] make FastAPI api
