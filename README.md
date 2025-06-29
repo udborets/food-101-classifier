@@ -34,7 +34,8 @@ Food-101 on Kaggle: https://www.kaggle.com/datasets/dansbecker/food-101
  - [PyTorch](https://pytorch.org/)
  - [PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/)
  - [Tensorboard](https://www.tensorflow.org/tensorboard)
- - 
+ - [Hydra](https://hydra.cc/)
+
 ### Inference 
 
  - [FastAPI](https://fastapi.tiangolo.com/)
